@@ -1,1 +1,18 @@
-<p>about works!</p>
+<section class="pt-12 px-4 w-full mx-auto">
+    <h2 class="text-3xl font-bold mb-6 text-center">Ubícanos</h2>
+    <google-map 
+        [center]="center" 
+        [zoom]="zoom"
+        [options]="mapOptions"
+        [height]="500"
+        [width]="null"
+        class="w-full"
+        >
+        <map-marker 
+            [position]="center"
+            [label]="{color: 'green', text: 'Tragones Anónimos', fontSize: '16px', fontWeight: 'bold'}"
+            [title]="'Tragones Anónimos, Fe en un Nuevo día'"
+            >
+        </map-marker>
+    </google-map>
+</section>
