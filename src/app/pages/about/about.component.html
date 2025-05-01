@@ -1,18 +1,45 @@
+<section class="py-12 px-4 max-w-4xl mx-auto">
+    <div class="text-center">
+        <h2 class="text-3xl font-bold mb-6">Nuestra Misión</h2>
+        <p class="text-xl mb-8">Tragones Anónimos es una comunidad de apoyo que ayuda a personas que luchan con el
+            sobrepeso y la relación problemática con la comida.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-2xl font-semibold mb-4">Nuestro Enfoque</h3>
+            <ul class="list-disc list-inside space-y-2">
+                <li>Compartimos experiencias y desafíos en un ambiente seguro y sin juicio</li>
+                <li>Aprendemos a desarrollar una relación saludable con la comida</li>
+                <li>Nos apoyamos mutuamente en el camino hacia una vida más equilibrada</li>
+                <li>Practicamos la aceptación y el autocuidado</li>
+                <li>Celebramos los pequeños logros y superamos los reveses juntos</li>
+            </ul>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-2xl font-semibold mb-4">Nuestros Objetivos</h3>
+            <ul class="list-disc list-inside space-y-2">
+                <li>Entender y cambiar patrones de alimentación compulsiva</li>
+                <li>Desarrollar una imagen corporal positiva</li>
+                <li>Aprender herramientas para manejar el estrés sin recurrir a la comida</li>
+                <li>Construir una comunidad de apoyo duradera</li>
+                <li>Alcanzar y mantener un peso saludable de manera sostenible</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="text-center mt-12">
+        <p class="text-xl mb-4">Si estás listo para comenzar un nuevo capítulo en tu relación con la comida y tu salud,
+            únete a nuestra comunidad.</p>
+    </div>
+</section>
 <section class="pt-12 px-4 w-full mx-auto">
     <h2 class="text-3xl font-bold mb-6 text-center">Ubícanos</h2>
-    <google-map 
-        [center]="center" 
-        [zoom]="zoom"
-        [options]="mapOptions"
-        [height]="500"
-        [width]="null"
-        class="w-full"
-        >
-        <map-marker 
-            [position]="center"
+    <google-map [center]="center" [zoom]="zoom" [options]="mapOptions" [height]="500" [width]="null" class="w-full">
+        <map-marker [position]="center"
             [label]="{color: 'green', text: 'Tragones Anónimos', fontSize: '16px', fontWeight: 'bold'}"
-            [title]="'Tragones Anónimos, Fe en un Nuevo día'"
-            >
+            [title]="'Tragones Anónimos, Fe en un Nuevo día'">
         </map-marker>
     </google-map>
 </section>

@@ -15,7 +15,7 @@ export const routes: Routes = [
     component: AboutComponent,
   },
   {
-    path: 'reservas',
+    path: 'conocenos',
     component: KnowComponent,
   },
   {
